@@ -2,15 +2,15 @@ const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
 
 // Header
-const API_KEY = "panda-f9935ee4507939bd9542ac5e5379f8d177574e2411e8e72d132518cef1dee09e"; // (required)
+const API_KEY = ""; // (required)
 
 // Body
-const folder_id = "3199ff87-1ab6-4188-a76a-2aa14c21d9b3"; // (optional) | obs: The folder you wanna put your video
+const folder_id = false; // (optional) | obs: The folder you wanna put your video
 const video_id = uuidv4(); // (optional) | obs: You can put an especific uuid for your video, or let it generate one.
-const title = "video panda"; // (optional) | obs: title is your video name
+const title = "example video"; // (optional) | obs: title is your video name
 const description = ""; // (optional)
 const hls_encryption = false; // (optional)
-const url = "https://b-vz-ded14ebd-85a.tv.pandavideo.com.br/79cb9b0e-a64b-4485-8a44-47f36b292e4c/playlist.m3u8"; // (required) | obs: url is an external video url
+const url = "https://..."; // (required) | obs: m3u8 url
 
 
 const uploadVideo = async () => {
